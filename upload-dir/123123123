@@ -1,0 +1,33 @@
+
+<!-- 	<ui:define name="maincontent">
+	
+	<div id = "display-box" style = "background:#DEF2C8; width:500px; margin:auto; padding:10px;">
+	
+	<div>
+	<h2>My Wishlist</h2>
+	</div>
+	
+	<table style = "padding-bottom:50px;">
+	<h:form rendered="#{wishlist.getWishlist() != null}">
+			<ui:repeat value="#{wishlist.getWishlist()}" var="line">
+				<tr>
+					<td width="128px"><h:graphicImage value="#{line.product.imageLocation}" height="128xp" width="128xp"/></td>
+					<td>
+						<table style="float: left;">
+							<tr>
+								<td><h:outputText value="#{line.product.name}" /></td>
+								
+								
+								<td><h:commandButton value="Add to basket" action="#{basket.addToBasket(products.product_id, products.quantity)}" /></td>
+								<td><h:commandButton value="Add to Basket" action="#{wishlist.addToBasketFromWishlist(line.product.product_id)}" /></td>
+								<td><h:commandButton value="Remove" action="#{wishlist.removeFromWishlist(line.product.product_id)}" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</ui:repeat>
+		</h:form>
+	</table>
+	</div>
+	
+	</ui:define> -->

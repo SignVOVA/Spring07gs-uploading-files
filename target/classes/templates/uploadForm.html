@@ -14,11 +14,22 @@
 			</table>
 		</form>
 	</div>
-
+	
 	<div>
-		<ul>
-			<li th:each="file : ${files}" th:text="${file}"></li>
-		</ul>
+		
+		<table border="1">
+		  <thead>
+		    <tr>
+		      <th>Name</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr th:each="file : ${files}">
+		      <td th:text="${file}"></td>
+		    </tr>
+		  </tbody>
+		</table>
+		
 	</div>
 
 </body>
